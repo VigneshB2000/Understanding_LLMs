@@ -5,7 +5,7 @@ import os
 import configparser
 
 config = configparser.RawConfigParser()
-config.read('../config.config')
+config.read('../../config.config')
 openapi_key = config.get('Keys', 'openapi_key')
 os.environ['OPENAI_API_KEY'] = openapi_key
 
